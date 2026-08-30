@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>BioChem Study Hub</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      color: #172033;
+    }
+
+    /* NAVIGATION */
+    header {
+      background: white;
+      border-bottom: 1px solid #e5e7eb;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .navbar {
+      max-width: 1100px;
+      margin: auto;
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 21px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      font-size: 25px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #555f70;
+      margin-left: 22px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #172033;
+    }
+
+    /* HERO */
+    .hero {
+      max-width: 1100px;
+      margin: auto;
+      padding: 75px 20px 50px;
+
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #e9f7ef;
+      padding: 8px 14px;
+      border-radius: 30px;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: 58px;
+      line-height: 1.05;
+      margin-bottom: 20px;
+      letter-spacing: -2px;
+    }
+
+    .hero p {
+      color: #667085;
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 600px;
+    }
+
+    .buttons {
+      margin-top: 28px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+      text-decoration: none;
+      padding: 14px 20px;
+      border-radius: 12px;
+      font-weight: bold;
+    }
+
+    .primary {
+      background: #172033;
+      color: white;
+    }
+
+    .secondary {
+      background: white;
+      color: #172033;
+      border: 1px solid #dfe3e8;
+    }
+
+    /* PROGRESS CARD */
+    .progress-card {
+      background: white;
+      padding: 28px;
+      border-radius: 24px;
+      border: 1px solid #e5e9f0;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+    }
+
+    .progress-card h3 {
+      margin-bottom: 8px;
+    }
+
+    .muted {
+      color: #667085;
+      font-size: 14px;
+    }
+
+    .progress-title {
+      margin-top: 25px;
+      font-weight: bold;
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 10px;
+      background: #edf0f4;
+      border-radius: 20px;
+      margin: 10px 0 20px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 68%;
+      background: #172033;
+      border-radius: 20px;
+    }
+
+    .subjects {
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px 20px 80px;
+    }
+
+    .section-title {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    /* SUBJECT CARDS */
+    .subject-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .subject-card {
+      background: white;
+      border: 1px solid #e5e9f0;
+      border-radius: 20px;
+      padding: 28px;
+      transition: 0.2s;
+    }
+
+    .subject-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+    }
+
+    .subject-icon {
+      font-size: 42px;
+    }
+
+    .subject-card h3 {
+      margin: 10px 0;
+      font-size: 23px;
+    }
+
+    .subject-card p {
+      color: #667085;
+      line-height: 1.6;
+    }
+
+    .open-button {
+      margin-top: 18px;
+      display: inline-block;
+      text-decoration: none;
+      font-weight: bold;
+      color: #172033;
+    }
+
+    /* TOOLS */
+    .tools {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .tool {
+      background: white;
+      border: 1px solid #e5e9f0;
+      padding: 22px;
+      border-radius: 17px;
+    }
+
+    .tool-icon {
+      font-size: 28px;
+    }
+
+    .tool strong {
+      display: block;
+      margin-top: 8px;
+    }
+
+    .tool small {
+      color: #667085;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: white;
+      color: #7b8494;
+      font-size: 14px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 750px) {
+
+      nav {
+        display: none;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        padding-top: 45px;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .subject-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .tools {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+
+  <header>
+    <div class="navbar">
+
+      <div class="logo">
+        🧬 BioChem Study Hub
+      </div>
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#subjects">Subjects</a>
+        <a href="#tools">Tools</a>
+        <a href="#progress">Progress</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- HOME -->
+
+  <section class="hero" id="home">
+
+    <div>
+
+      <div class="badge">
+        📚 Learn • Practice • Improve
+      </div>
+
+      <h1>
+        Make Biology & Chemistry easier.
+      </h1>
+
+      <p>
+        Your study space for clear notes, quizzes, past papers
+        and a simple study plan — all in one place.
+      </p>
+
+      <div class="buttons">
+
+        <a href="#subjects" class="button primary">
+          Start Studying
+        </a>
+
+        <a href="#tools" class="button secondary">
+          Explore Tools
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- PROGRESS -->
+
+    <div class="progress-card" id="progress">
+
+      <h3>🎯 Your Study Progress</h3>
+
+      <p class="muted">
+        Keep going — you're making progress.
+      </p>
+
+      <div class="progress-title">
+        Overall Progress · 68%
+      </div>
+
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
+
+      <div style="display:flex; justify-content:space-between;">
+        <span class="muted">Biology · 72%</span>
+        <span class="muted">Chemistry · 64%</span>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SUBJECTS -->
+
+  <section class="subjects" id="subjects">
+
+    <h2 class="section-title">
+      Choose a subject
+    </h2>
+
+
+    <div class="subject-grid">
+
+      <!-- BIOLOGY -->
+
+      <div class="subject-card">
+
+        <div class="subject-icon">
+          🧬
+        </div>
+
+        <h3>
+          Biology
+        </h3>
+
+        <p>
+          Study cells, genetics, human biology, ecology,
+          reproduction and many other important topics.
+        </p>
+
+        <a href="#" class="open-button"
+           onclick="comingSoon('Biology')">
+          Open Biology →
+        </a>
+
+      </div>
+
+
+      <!-- CHEMISTRY -->
+
+      <div class="subject-card">
+
+        <div class="subject-icon">
+          🧪
+        </div>
+
+        <h3>
+          Chemistry
+        </h3>
+
+        <p>
+          Learn atomic structure, bonding, acids and bases,
+          organic chemistry, calculations and more.
+        </p>
+
+        <a href="#" class="open-button"
+           onclick="comingSoon('Chemistry')">
+          Open Chemistry →
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- TOOLS -->
+
+    <h2 class="section-title" id="tools"
+        style="margin-top:50px;">
+      Study Tools
+    </h2>
+
+
+    <div class="tools">
+
+      <div class="tool">
+        <div class="tool-icon">📝</div>
+        <strong>Notes</strong>
+        <small>Quick revision</small>
+      </div>
+
+      <div class="tool">
+        <div class="tool-icon">❓</div>
+        <strong>Quizzes</strong>
+        <small>Test yourself</small>
+      </div>
+
+      <div class="tool">
+        <div class="tool-icon">📄</div>
+        <strong>Past Papers</strong>
+        <small>Practice exams</small>
+      </div>
+
+      <div class="tool">
+        <div class="tool-icon">📅</div>
+        <strong>Study Planner</strong>
+        <small>Plan your time</small>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+    BioChem Study Hub · Built for smarter studying 🧠
+  </footer>
+
+
+  <!-- JAVASCRIPT -->
+
+  <script>
+
+    function comingSoon(subject) {
+
+      alert(
+        subject +
+        " section is coming next! 📚"
+      );
+
+    }
+
+  </script>
+
+</body>
+</html>

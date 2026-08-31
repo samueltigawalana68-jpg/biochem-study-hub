@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Photosynthesis | Biochem Study Hub</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f7fb;
+      color: #222;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #173f5f;
+      color: white;
+      text-align: center;
+      padding: 45px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    header p {
+      font-size: 18px;
+      margin-bottom: 0;
+    }
+
+    nav {
+      background: white;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      color: #173f5f;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 5px 10px;
+      display: inline-block;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 28px;
+      margin-bottom: 25px;
+      border-radius: 14px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: #173f5f;
+      border-bottom: 2px solid #dce8f1;
+      padding-bottom: 8px;
+    }
+
+    h3 {
+      color: #245f87;
+      margin-top: 25px;
+    }
+
+    .definition {
+      background: #eef6fb;
+      padding: 18px;
+      border-left: 5px solid #173f5f;
+      border-radius: 8px;
+    }
+
+    .equation {
+      background: #f1f1f1;
+      padding: 18px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+
+    .diagram {
+      background: #fafafa;
+      border: 2px solid #ddd;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 10px;
+      text-align: center;
+      font-family: "Courier New", monospace;
+      overflow-x: auto;
+      white-space: pre-wrap;
+    }
+
+    .important {
+      background: #fff8df;
+      border-left: 5px solid #d6a500;
+      padding: 16px;
+      border-radius: 8px;
+    }
+
+    ul, ol {
+      padding-left: 25px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #173f5f;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background: #f7f7f7;
+    }
+
+    footer {
+      background: #173f5f;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 650px) {
+      header h1 {
+        font-size: 28px;
+      }
+
+      .card {
+        padding: 20px;
+      }
+
+      table {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>🌿 Biochem Study Hub</h1>
+  <p>Biological Sciences — Photosynthesis</p>
+</header>
+
+<nav>
+  <a href="#definition">Definition</a>
+  <a href="#chloroplast">Chloroplast</a>
+  <a href="#light">Light Reactions</a>
+  <a href="#calvin">Calvin Cycle</a>
+  <a href="#c3">C3</a>
+  <a href="#c4">C4</a>
+  <a href="#cam">CAM</a>
+  <a href="#factors">Factors</a>
+  <a href="#exam">Exam Points</a>
+</nav>
+
+<div class="container">
+
+  <!-- DEFINITION -->
+
+  <section class="card" id="definition">
+
+    <h2>1. Definition of Photosynthesis</h2>
+
+    <div class="definition">
+      <strong>Photosynthesis</strong> is the process by which green plants,
+      algae and some microorganisms use light energy to convert carbon
+      dioxide and water into organic compounds, mainly carbohydrates,
+      with oxygen released as a by-product.
+    </div>
+
+    <h3>Overall Equation</h3>
+
+    <div class="equation">
+      6CO₂ + 6H₂O + Light Energy → C₆H₁₂O₆ + 6O₂
+    </div>
+
+    <h3>Importance of Photosynthesis</h3>
+
+    <ul>
+      <li>Converts light energy into chemical energy.</li>
+      <li>Produces organic compounds used as food.</li>
+      <li>Releases oxygen into the atmosphere.</li>
+      <li>Provides energy-rich carbon compounds for organisms.</li>
+      <li>Forms the foundation of most terrestrial food chains.</li>
+      <li>Removes carbon dioxide from the atmosphere.</li>
+      <li>Contributes to the global carbon cycle.</li>
+    </ul>
+
+  </section>
+
+
+  <!-- CHLOROPLAST -->
+
+  <section class="card" id="chloroplast">
+
+    <h2>2. Chloroplast and the Site of Photosynthesis</h2>
+
+    <p>
+      In higher plants, photosynthesis occurs mainly in the
+      <strong>chloroplasts</strong> of leaf cells.
+    </p>
+
+    <h3>Important Chloroplast Structures</h3>
+
+    <ul>
+      <li>
+        <strong>Outer membrane:</strong> The outer boundary of the chloroplast.
+      </li>
+
+      <li>
+        <strong>Inner membrane:</strong> Forms the internal boundary of the chloroplast.
+      </li>
+
+      <li>
+        <strong>Stroma:</strong> Fluid-filled region where the Calvin cycle occurs.
+      </li>
+
+      <li>
+        <strong>Thylakoids:</strong> Flattened membrane sacs containing
+        photosynthetic pigments and electron transport components.
+      </li>
+
+      <li>
+        <strong>Granum:</strong> A stack of thylakoids.
+      </li>
+
+      <li>
+        <strong>Stroma lamellae:</strong> Membranes connecting grana.
+      </li>
+    </ul>
+
+    <div class="diagram">
+CHLOROPLAST
+
+        ┌─────────────────────────────┐
+        │       OUTER MEMBRANE        │
+        │  ┌───────────────────────┐  │
+        │  │      INNER MEMBRANE   │  │
+        │  │                       │  │
+        │  │   GRANUM              │  │
+        │  │  ═════ THYLAKOID      │  │
+        │  │  ═════ THYLAKOID      │  │
+        │  │  ═════ THYLAKOID      │  │
+        │  │                       │  │
+        │  │       STROMA          │  │
+        │  │                       │  │
+        │  └───────────────────────┘  │
+        └─────────────────────────────┘
+    </div>
+
+  </section>
+
+
+  <!-- PIGMENTS -->
+
+  <section class="card">
+
+    <h2>3. Photosynthetic Pigments</h2>
+
+    <p>
+      Photosynthetic pigments absorb light energy used during photosynthesis.
+    </p>
+
+    <h3>Chlorophyll a</h3>
+
+    <ul>
+      <li>The primary photosynthetic pigment.</li>
+      <li>Directly participates in the light reactions.</li>
+      <li>Its reaction centres are associated with P680 and P700.</li>
+    </ul>
+
+    <h3>Chlorophyll b</h3>
+
+    <ul>
+      <li>An accessory pigment.</li>
+      <li>Broadens the range of light wavelengths that can be absorbed.</li>
+      <li>Transfers absorbed energy to chlorophyll a.</li>
+    </ul>
+
+    <h3>Carotenoids</h3>
+
+    <ul>
+      <li>Include carotenes and xanthophylls.</li>
+      <li>Absorb additional wavelengths of light.</li>
+      <li>Help protect chloroplasts from excessive light.</li>
+    </ul>
+
+  </section>
+
+
+  <!-- LIGHT REACTIONS -->
+
+  <section class="card" id="light">
+
+    <h2>4. Light-Dependent Reactions</h2>
+
+    <p>
+      The light-dependent reactions occur mainly on the
+      <strong>thylakoid membranes</strong> of chloroplasts.
+      They convert light energy into chemical energy stored in ATP and NADPH.
+    </p>
+
+    <h3>Main Events</h3>
+
+    <ol>
+      <li>Light is absorbed by photosynthetic pigments.</li>
+      <li>Electrons become excited.</li>
+      <li>Water undergoes photolysis.</li>
+      <li>Electrons pass through an electron transport chain.</li>
+      <li>A proton gradient is established.</li>
+      <li>ATP is produced through chemiosmosis.</li>
+      <li>NADP⁺ is reduced to NADPH.</li>
+      <li>Oxygen is released from water splitting.</li>
+    </ol>
+
+    <h3>Basic Light Reaction Pathway</h3>
+
+    <div class="diagram">
+LIGHT
+  ↓
+PHOTOSYSTEM II (P680)
+  ↓
+Electron Transport Chain
+  ↓
+PHOTOSYSTEM I (P700)
+  ↓
+NADP⁺ → NADPH
+
+Water
+  ↓
+Photolysis
+  ↓
+H⁺ + e⁻ + O₂
+
+Proton gradient
+  ↓
+ATP Synthase
+  ↓
+ATP
+    </div>
+
+    <h3>Photolysis of Water</h3>
+
+    <div class="equation">
+      2H₂O → 4H⁺ + 4e⁻ + O₂
+    </div>
+
+    <p>
+      The electrons replace electrons lost by chlorophyll at Photosystem II,
+      while oxygen is released as a by-product.
+    </p>
+
+  </section>
+
+
+  <!-- PHOTOSYSTEMS -->
+
+  <section class="card">
+
+    <h2>5. Photosystems</h2>
+
+    <h3>Photosystem II — PSII</h3>
+
+    <ul>
+      <li>Reaction centre: <strong>P680</strong>.</li>
+      <li>Functions early in the linear electron pathway.</li>
+      <li>Receives replacement electrons from water.</li>
+      <li>Contributes to oxygen production.</li>
+      <li>Helps establish the proton gradient used for ATP synthesis.</li>
+    </ul>
+
+    <h3>Photosystem I — PSI</h3>
+
+    <ul>
+      <li>Reaction centre: <strong>P700</strong>.</li>
+      <li>Re-energizes electrons.</li>
+      <li>Provides electrons used in the reduction of NADP⁺.</li>
+      <li>Contributes to NADPH production.</li>
+    </ul>
+
+    <div class="important">
+      <strong>Exam point:</strong> Although it is called Photosystem II,
+      PSII functions before PSI in the normal linear electron pathway.
+    </div>
+
+  </section>
+
+
+  <!-- PHOTOPHOSPHORYLATION -->
+
+  <section class="card">
+
+    <h2>6. Photophosphorylation</h2>
+
+    <p>
+      Photophosphorylation is the formation of ATP using light energy
+      during photosynthesis.
+    </p>
+
+    <h3>Linear Photophosphorylation</h3>
+
+    <div class="diagram">
+H₂O
+ ↓
+PSII
+ ↓
+Electron Transport Chain
+ ↓
+PSI
+ ↓
+NADP⁺ → NADPH
+
+Produces:
+ATP + NADPH + O₂
+    </div>
+
+    <h3>Cyclic Photophosphorylation</h3>
+
+    <p>
+      In cyclic electron flow, electrons from PSI return through electron
+      carriers to PSI instead of reducing NADP⁺.
+    </p>
+
+    <div class="diagram">
+          ┌───────────────┐
+          │               ↓
+       PSI → Electron Carriers
+          ↑               │
+          └───────────────┘
+
+              ↓
+             ATP
+
+No O₂ produced
+No NADPH produced
+    </div>
+
+    <div class="important">
+      Cyclic electron flow mainly increases ATP production and does not
+      involve water splitting at PSII.
+    </div>
+
+  </section>
+
+
+  <!-- CALVIN CYCLE -->
+
+  <section class="card" id="calvin">
+
+    <h2>7. Calvin Cycle</h2>
+
+    <p>
+      The Calvin cycle occurs in the <strong>stroma</strong> of the chloroplast.
+      It uses ATP and NADPH from the light-dependent reactions to incorporate
+      carbon dioxide into organic molecules.
+    </p>
+
+    <h3>Three Main Stages</h3>
+
+    <h3>Stage 1 — Carbon Fixation</h3>
+
+    <p>
+      CO₂ combines with the five-carbon molecule
+      <strong>RuBP</strong>. The enzyme <strong>RuBisCO</strong>
+      catalyses the reaction.
+    </p>
+
+    <p>
+      The unstable six-carbon compound breaks down into two molecules
+      of <strong>3-PGA</strong>.
+    </p>
+
+    <h3>Stage 2 — Reduction</h3>
+
+    <p>
+      3-PGA is converted into triose phosphate (G3P) using ATP and NADPH.
+    </p>
+
+    <h3>Stage 3 — Regeneration of RuBP</h3>
+
+    <p>
+      Most G3P remains in the cycle and is used to regenerate RuBP.
+      This allows the cycle to continue.
+    </p>
+
+    <div class="diagram">
+             CO₂
+              ↓
+            RuBP
+              ↓
+          [RuBisCO]
+              ↓
+            3-PGA
+              ↓
+        ATP + NADPH
+              ↓
+             G3P
+           ↙     ↘
+     Carbohydrates  RuBP
+                    ↑
+                    └── Regeneration
+    </div>
+
+    <div class="important">
+      The Calvin cycle does not directly use light. However, it depends
+      on ATP and NADPH generated by the light-dependent reactions.
+    </div>
+
+  </section>
+
+
+  <!-- C3 -->
+
+  <section class="card" id="c3">
+
+    <h2>8. C3 Photosynthesis</h2>
+
+    <p>
+      C3 photosynthesis is the most common pathway of carbon fixation.
+      It is called C3 because the first stable product of CO₂ fixation
+      is the three-carbon compound 3-PGA.
+    </p>
+
+    <h3>Pathway</h3>
+
+    <div class="diagram">
+CO₂
+ ↓
+RuBP (5-carbon)
+ ↓
+RuBisCO
+ ↓
+3-PGA (3-carbon)
+ ↓
+Reduction
+ ↓
+G3P
+ ↓
+Carbohydrates
+    </div>
+
+    <h3>Examples</h3>
+
+    <p>
+      Many plants use the C3 pathway, including wheat, rice, beans
+      and many temperate plants.
+    </p>
+
+    <h3>Characteristics</h3>
+
+    <ul>
+      <li>Initial CO₂ fixation is catalysed by RuBisCO.</li>
+      <li>First stable product is 3-PGA.</li>
+      <li>Carbon fixation and the Calvin cycle occur in the same cells.</li>
+      <li>Photorespiration can become significant under hot, dry conditions.</li>
+    </ul>
+
+  </section>
+
+
+  <!-- C4 -->
+
+  <section class="card" id="c4">
+
+    <h2>9. C4 Photosynthesis</h2>
+
+    <p>
+      C4 photosynthesis is an adaptation that reduces photorespiration
+      by concentrating CO₂ around RuBisCO.
+    </p>
+
+    <h3>Initial Carbon Fixation</h3>
+
+    <p>
+      In mesophyll cells, CO₂ is initially fixed by
+      <strong>PEP carboxylase</strong> to form a four-carbon compound.
+    </p>
+
+    <div class="diagram">
+MESOPHYLL CELL
+
+CO₂
+ ↓
+PEP
+ ↓
+PEP Carboxylase
+ ↓
+Oxaloacetate
+ ↓
+Malate / other C4 acids
+ ↓
+Transport to bundle sheath
+
+             ↓
+
+BUNDLE-SHEATH CELL
+
+C4 acid
+ ↓
+CO₂ released
+ ↓
+Calvin Cycle
+ ↓
+G3P
+ ↓
+Carbohydrates
+    </div>
+
+    <h3>Examples</h3>
+
+    <ul>
+      <li>Maize</li>
+      <li>Sugarcane</li>
+      <li>Sorghum</li>
+    </ul>
+
+    <h3>Advantages</h3>
+
+    <ul>
+      <li>Reduces photorespiration.</li>
+      <li>Works well at high temperatures.</li>
+      <li>Efficient under high light intensity.</li>
+      <li>Maintains relatively high photosynthetic rates in hot environments.</li>
+    </ul>
+
+  </section>
+
+
+  <!-- CAM -->
+
+  <section class="card" id="cam">
+
+    <h2>10. CAM Photosynthesis</h2>
+
+    <p>
+      CAM stands for <strong>Crassulacean Acid Metabolism</strong>.
+      It is an adaptation found in many plants living in dry environments.
+    </p>
+
+    <h3>Night</h3>
+
+    <ul>
+      <li>Stomata open.</li>
+      <li>CO₂ enters the plant.</li>
+      <li>CO₂ is fixed by PEP carboxylase.</li>
+      <li>Organic acids such as malate accumulate in vacuoles.</li>
+    </ul>
+
+    <h3>Day</h3>
+
+    <ul>
+      <li>Stomata are generally closed.</li>
+      <li>Organic acids are broken down.</li>
+      <li>CO₂ is released inside the leaf.</li>
+      <li>The Calvin cycle uses the released CO₂.</li>
+    </ul>
+
+    <div class="diagram">
+             CAM PHOTOSYNTHESIS
+
+NIGHT
+Stomata OPEN
+      ↓
+     CO₂
+      ↓
+PEP Carboxylase
+      ↓
+Organic acids
+      ↓
+Stored as malate
+      ↓
+     DAY
+
+Stomata CLOSED
+      ↓
+Malate broken down
+      ↓
+CO₂ released
+      ↓
+Calvin Cycle
+      ↓
+Carbohydrates
+    </div>
+
+    <h3>Importance</h3>
+
+    <p>
+      CAM conserves water by allowing gas exchange mainly at night,
+      when temperatures are lower and humidity is often higher.
+    </p>
+
+    <h3>Examples</h3>
+
+    <ul>
+      <li>Cacti</li>
+      <li>Pineapple</li>
+      <li>Many succulents</li>
+    </ul>
+
+  </section>
+
+
+  <!-- COMPARISON -->
+
+  <section class="card">
+
+    <h2>11. Comparison of C3, C4 and CAM Plants</h2>
+
+    <table>
+
+      <tr>
+        <th>Feature</th>
+        <th>C3</th>
+        <th>C4</th>
+        <th>CAM</th>
+      </tr>
+
+      <tr>
+        <td>Initial CO₂-fixing enzyme</td>
+        <td>RuBisCO</td>
+        <td>PEP carboxylase</td>
+        <td>PEP carboxylase</td>
+      </tr>
+
+      <tr>
+        <td>First stable product</td>
+        <td>3-PGA</td>
+        <td>Four-carbon compound</td>
+        <td>Organic acids</td>
+      </tr>
+
+      <tr>
+        <td>Separation</td>
+        <td>No special separation</td>
+        <td>Spatial separation</td>
+        <td>Temporal separation</td>
+      </tr>
+
+      <tr>
+        <td>Stomata</td>
+        <td>Usually open during daylight</td>
+        <td>Usually open during daylight</td>
+        <td>Mainly open at night</td>
+      </tr>
+
+      <tr>
+        <td>Photorespiration</td>
+        <td>More
